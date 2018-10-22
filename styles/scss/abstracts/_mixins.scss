@@ -1,0 +1,5 @@
+@mixin size($width, $height: $width) {
+    // height s'il ne reçoit pas de valeur est égale à width
+    width: $width;
+    height: $height;
+}

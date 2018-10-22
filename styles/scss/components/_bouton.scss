@@ -1,0 +1,8 @@
+.bouton {
+    @include size(230px, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorTest;
+    text-decoration: none;
+}

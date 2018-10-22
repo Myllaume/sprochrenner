@@ -1,0 +1,28 @@
+.raccourcis {
+    display: flex;
+    height: 90px;
+
+    &--item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        width: calc(100%/3);
+        height: 90px;
+        font-size: 30px;
+        color: $colorWhite;
+
+        &---blue {
+            background-color: $colorTestBlue;
+        }
+
+        &---green {
+            background-color: $colorTestGreen;
+        }
+
+        &---red {
+            background-color: $colorTestRed;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+body {
+    background-image: url(/src/images/fond-page.png);
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: $colorWhite;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.col3 {
+    width: calc(100%/3);
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.col4 {
+    width: calc(100%/4);
+    flex: 1;
+    margin: 5px;
+    min-width: 200px;
+}
+
+.head {
+    &-col3 {
+        width: calc(100%/3);
+        flex: 1;
+        margin: 10px;
+    }
+    
+    &-col4 {
+        width: calc(100%/4);
+        flex: 1;
+        margin: 5px;
+    }
+}
+
+// @media (min-width: 800px) {
+
+//     .col3 {
+//         width: calc(750px/3);
+//         padding: 5px;
+//     }
+
+//     .col4 {
+//         width: calc(900px/4);
+//         padding: 5px;
+//     }
+
+// }
+
+// @media (min-width: 1000px) {
+
+//     .wrapper {
+//         max-width: 1000px;
+//         background-color: $colorWhite;
+//         margin: 0 auto;
+//     }
+
+//     .row {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         padding: 0 10px;
+//     }
+
+//     .col3 {
+//         width: calc(900px/3);
+//         padding: 5px;
+//     }
+
+//     .col4 {
+//         width: calc(900px/4);
+//         padding: 5px;
+//     }
+
+// }
