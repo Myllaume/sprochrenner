@@ -1,5 +1,6 @@
 body {
-    background-image: url(/src/images/fond-page.png);
+    background-image: linear-gradient(to bottom, transparent, white 90%),
+        url(/src/images/fond-page.png);
     background-size: cover;
 }
 
@@ -14,7 +15,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 10px;
 }
 
 .col3 {
@@ -37,7 +37,7 @@ body {
         flex: 1;
         margin: 10px;
     }
-    
+
     &-col4 {
         width: calc(100%/4);
         flex: 1;

@@ -7,8 +7,9 @@
     position: relative;
     padding: 10px 0;
     width: 100%;
-    height: 550px;
+    height: 390px;
     background-image: url(/src/images/fond-header.png);
+    background-position: right top;
     background-size: cover;
 
     &__navigation {
@@ -18,40 +19,70 @@
 
         &--burger {
             position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             top: 0px;
             right: 0px;
             @include size(80px);
             background-color: $colorWhite;
             border-radius: 50%;
+
+            &--triangle {
+                position: absolute;
+                bottom: -15px;
+                left: -5px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 35px 35px 0 0;
+                border-color: $colorWhite transparent transparent transparent;
+                transform: rotate(25deg);
+            }
+
+            &--branche {
+                @include size(45px, 5px);
+                background-color: $colorBlack;
+                margin: 5px 0;
+                border-radius: 2px;
+            }
         }
     }
 
     &__enseigne {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        
+
         &--logo-site {
-            width: 500px;
+            position: relative;
+            left: -50px;
+            width: 200px;
         }
 
         &--description {
-            position: relative;
-            top: -20px;
+            margin: 0 0 50px 0;
+            text-align: center;
+            font-size: 20px;
             color: $colorWhite;
-            margin: 0 0 30px 0;
         }
     }
 
     &__compteur {
-        width: 70%;
+        display: flex;
+        flex: 1;
 
         &--content {
             display: flex;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
         }
 
         &--led {
-            @include size(70px, 50px);
+            @include size(50px, 35px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,13 +92,80 @@
     }
 
     &__boutons-content {
-        width: 600px;
-        margin: 50px 0;
+        display: flex;
+        justify-items: center;
+        margin: 10px 0;
 
         &--ou {
-            text-align: center;
+            display: none;
             color: $colorWhite;
             font-size: 40px;
+            text-align: center;
         }
     }
+}
+
+@media (min-width: 450px) {
+    .header__enseigne--logo-site {
+        width: 300px;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .header {
+
+        &__enseigne--logo-site {
+            position: static;
+            width: 300px;
+        }
+
+        &__boutons-content--ou {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .header {
+        height: 550px;
+        background-position: center;
+
+        &__enseigne {
+
+            &--logo-site {
+                position: static;
+                width: 500px;
+            }
+
+            &--description {
+                position: relative;
+                top: -10px;
+                font-size: 20px;
+            }
+        }
+
+        &__compteur {
+
+            &--led {
+                @include size(70px, 50px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorTest;
+                margin: 0 10px;
+            }
+        }
+
+        &__boutons-content {
+            @include size(600px, 480px);
+
+            &--ou {
+                display: block;
+            }
+        }
+
+    }
+
 }
