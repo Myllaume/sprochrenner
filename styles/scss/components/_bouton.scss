@@ -1,8 +1,29 @@
-.bouton {
+.bouton-green {
     @include size(230px, 70px);
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $colorTest;
+    background-color: $colorFinalGreen;
     text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: $colorWhite;
+}
+
+.bouton-turquoise {
+    @include size(230px, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorFinalTurquoise;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: $colorWhite;
 }

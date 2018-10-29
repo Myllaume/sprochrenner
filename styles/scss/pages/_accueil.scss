@@ -10,19 +10,20 @@
         text-decoration: none;
         width: calc(100%/3);
         height: 90px;
-        font-size: 30px;
+        font-size: 65px;
         color: $colorWhite;
+        font-family: 'Meatloaf';
 
         &---blue {
-            background-color: $colorTestBlue;
+            background-color: $colorFinalBlue;
         }
 
         &---green {
-            background-color: $colorTestGreen;
+            background-color: $colorFinalGreen;
         }
 
-        &---red {
-            background-color: $colorTestRed;
+        &---yellow {
+            background-color: $colorFinalYellow;
         }
     }
 }
