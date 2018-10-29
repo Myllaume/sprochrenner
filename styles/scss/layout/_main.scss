@@ -1,3 +1,23 @@
 .main {
     background-color: $colorWhite;
+<<<<<<< HEAD
+=======
+
+    &__summary {
+        margin: 30px 50px 30px 50px;
+        text-align: justify;
+    }
+
+    &__summary--title {
+        text-align: center;
+        font-family: 'Meatloaf';
+        font-size: 80px;
+        color: $colorFinalBlue;
+    }
+
+    &__bloc {
+        background-color: $colorTest;
+        height: 800px;
+    }
+>>>>>>> juju-version
 }
