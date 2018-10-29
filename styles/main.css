@@ -33,7 +33,7 @@ h2,
 h3,
 p,
 a {
-  font-family: "Bebas Neue";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -402,8 +402,6 @@ body {
   background-color: whitesmoke;
 }
 
-<<<<<<< HEAD
-=======
 .main__summary {
   margin: 30px 50px 30px 50px;
   text-align: justify;
@@ -421,7 +419,6 @@ body {
   height: 800px;
 }
 
->>>>>>> juju-version
 .raccourcis {
   display: -webkit-box;
   display: -ms-flexbox;
