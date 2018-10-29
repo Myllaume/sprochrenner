@@ -1,0 +1,139 @@
+// -- colonnes page
+.coordonnes-content {
+    display: flex;
+    justify-content: end;
+    flex: 2;
+
+    article {
+        margin: 30px 0;
+        border-radius: 5px;
+    }
+}
+
+.form-content {
+    flex: 4;
+
+    article {
+        margin: 30px 0;
+        border-radius: 5px;
+    }
+}
+
+// -- éléments page
+
+.coordonnes-box {
+    @include size(280px, 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: $colorFinalBlue;
+
+    &--ligne {
+        margin-left: 15px;
+
+        p {
+            font-size: 26px;
+        }
+    }
+
+    &--titre {
+        color: rgb(24, 121, 128);
+    }
+
+    &--texte {
+        color: $colorWhite;
+    }
+}
+
+.formulaire-box {
+    @include size(550px, auto);
+    background-color: $colorFinalGreen;
+
+    &--traille {
+        @include size(100%, auto);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: $colorFinalGreen;
+        border-radius: 5px;
+
+        p {
+            margin: 5px 15px;
+            font-size: 18px;
+            color: $colorWhite;
+        }
+
+        h3 {
+            margin: 5px 15px;
+            font-size: 24px;
+            color: $colorWhite;
+        }
+    }
+
+    &--form {
+        @include size(100%, auto);
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+        color: $colorWhite;
+        background-color: hsl(0, 0%, 90%);
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        &--ligne {
+            @include size(100%, auto);
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0;
+
+            input,
+            label,
+            textarea {
+                width: 50%;
+                border: 0;
+                background-color: transparent;
+            }
+
+            input,
+            textarea {
+                width: 300px;
+                position: relative;
+                top: -5px;
+                padding: 5px;
+                font-size: 18px;
+            }
+
+            textarea {
+                height: 200px;
+                background-color: #b2b2b2;
+                border-radius: 5px;
+            }
+
+            input {
+                border-bottom: 1px #b2b2b2 solid;
+            }
+
+            label {
+                width: 160px;
+                color: $colorFinalGreen;
+            }
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            background-color: $colorFinalGreen;
+            border: 0;
+            padding: 5px 30px;
+            font-size: 15px;
+            color: $colorWhite;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    }
+}

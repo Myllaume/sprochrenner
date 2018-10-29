@@ -17,6 +17,13 @@ body {
     justify-content: space-between;
 }
 
+.col2 {
+    width: calc(100%/2);
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
 .col3 {
     width: calc(100%/3);
     flex: 1;
