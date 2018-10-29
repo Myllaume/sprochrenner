@@ -14,15 +14,15 @@
         color: $colorWhite;
 
         &---blue {
-            background-color: $colorTestBlue;
+            background-color: $colorFinalBlue;
         }
 
         &---green {
-            background-color: $colorTestGreen;
+            background-color: $colorFinalGreen;
         }
 
-        &---red {
-            background-color: $colorTestRed;
+        &---yellow {
+            background-color: $colorFinalYellow;
         }
     }
 }
