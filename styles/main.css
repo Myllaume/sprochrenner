@@ -23,6 +23,11 @@ a {
   color: #161515;
 }
 
+.titre-page {
+  font-size: 36px;
+  color: whitesmoke;
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, white)), url(/src/images/fond-page.png);
   background-image: linear-gradient(to bottom, transparent, white 90%), url(/src/images/fond-page.png);
@@ -45,6 +50,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.col2 {
+  width: calc(100%/2);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 10px;
+  min-width: 250px;
 }
 
 .col3 {
@@ -319,11 +333,6 @@ body {
   background-color: whitesmoke;
 }
 
-.main__bloc {
-  background-color: #e28140;
-  height: 800px;
-}
-
 .raccourcis {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,5 +368,187 @@ body {
 
 .raccourcis--item---red {
   background-color: #db6d6d;
+}
+
+.coordonnes-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.coordonnes-content article {
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.form-content {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.form-content article {
+  margin: 30px 0;
+  border-radius: 5px;
+}
+
+.coordonnes-box {
+  width: 280px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #28c6d1;
+}
+
+.coordonnes-box--ligne {
+  margin-left: 15px;
+}
+
+.coordonnes-box--ligne p {
+  font-size: 26px;
+}
+
+.coordonnes-box--titre {
+  color: #187980;
+}
+
+.coordonnes-box--texte {
+  color: whitesmoke;
+}
+
+.formulaire-box {
+  width: 550px;
+  height: auto;
+  background-color: #7ac943;
+}
+
+.formulaire-box--traille {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: #7ac943;
+  border-radius: 5px;
+}
+
+.formulaire-box--traille p {
+  margin: 5px 15px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.formulaire-box--traille h3 {
+  margin: 5px 15px;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.formulaire-box--form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 26px;
+  color: whitesmoke;
+  background-color: #e6e6e6;
+}
+
+.formulaire-box--form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.formulaire-box--form--ligne {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.formulaire-box--form--ligne input,
+.formulaire-box--form--ligne label,
+.formulaire-box--form--ligne textarea {
+  width: 50%;
+  border: 0;
+  background-color: transparent;
+}
+
+.formulaire-box--form--ligne input,
+.formulaire-box--form--ligne textarea {
+  width: 300px;
+  position: relative;
+  top: -5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.formulaire-box--form--ligne textarea {
+  height: 200px;
+  background-color: #b2b2b2;
+  border-radius: 5px;
+}
+
+.formulaire-box--form--ligne input {
+  border-bottom: 1px #b2b2b2 solid;
+}
+
+.formulaire-box--form--ligne label {
+  width: 160px;
+  color: #7ac943;
+}
+
+.formulaire-box--form input[type="submit"] {
+  display: inline-block;
+  background-color: #7ac943;
+  border: 0;
+  padding: 5px 30px;
+  font-size: 15px;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 /*# sourceMappingURL=main.css.map */
