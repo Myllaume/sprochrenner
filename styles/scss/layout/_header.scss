@@ -86,8 +86,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: $colorTest;
+            // background-color: $colorTest;
             margin: 0 10px;
+            border-radius: 15%;
         }
     }
 
@@ -153,8 +154,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: $colorTest;
+                // background-color: $colorTest;
                 margin: 0 10px;
+                border-radius: 15%;
             }
         }
 
@@ -168,4 +170,18 @@
 
     }
 
+}
+
+// Test compteur (je sais pas où le placer mdrrr)
+
+.days {
+    background-color: $colorFinalGreen;
+}
+
+.months {
+    background-color: $colorFinalTurquoise;
+}
+
+.hours {
+    background-color: $colorFinalBlue;
 }
