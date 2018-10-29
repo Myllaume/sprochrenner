@@ -98,6 +98,7 @@
                 width: 50%;
                 border: 0;
                 background-color: transparent;
+                font-family: "Bebas Neue";
             }
 
             input,
@@ -106,7 +107,9 @@
                 position: relative;
                 top: -5px;
                 padding: 5px;
-                font-size: 18px;
+                font-size: 32px;
+                letter-spacing: 0.15em;
+                font-family: "Meatloaf";
             }
 
             textarea {
@@ -130,10 +133,12 @@
             background-color: $colorFinalGreen;
             border: 0;
             padding: 5px 30px;
-            font-size: 15px;
+            font-size: 19px;
             color: $colorWhite;
             border-radius: 5px;
             margin: 10px 0;
+            letter-spacing: 0.2em;
+            font-family: "Bebas Neue";
         }
     }
 }
