@@ -2,4 +2,11 @@
     font-family: "Bebas Neue";
     src: url("../src/fonts/BebasNeue-Regular.woff2") format("woff2"),
            url("../src/fonts/BebasNeue-Regular.woff") format("woff");
-   } 
+   }
+
+   @font-face {
+    font-family: "Meatloaf";
+    src: url("../src/fonts/meatloafsketched.woff2") format("woff2"),
+           url("../src/fonts/meatloafsketched.woff") format("woff");
+   }
+
