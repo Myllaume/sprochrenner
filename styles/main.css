@@ -372,6 +372,18 @@ body {
   background-color: whitesmoke;
 }
 
+.main__summary {
+  margin: 30px 50px 30px 50px;
+  text-align: justify;
+}
+
+.main__summary--title {
+  text-align: center;
+  font-family: 'Meatloaf';
+  font-size: 80px;
+  color: #28c6d1;
+}
+
 .main__bloc {
   background-color: #e28140;
   height: 800px;
