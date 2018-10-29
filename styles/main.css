@@ -382,7 +382,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 90px;
-  font-family: 'Meatloaf';
 }
 
 .raccourcis--item {
@@ -399,8 +398,9 @@ body {
   text-decoration: none;
   width: calc(100%/3);
   height: 90px;
-  font-size: 30px;
+  font-size: 65px;
   color: whitesmoke;
+  font-family: 'Meatloaf';
 }
 
 .raccourcis--item---blue {

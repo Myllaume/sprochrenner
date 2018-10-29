@@ -1,7 +1,6 @@
 .raccourcis {
     display: flex;
     height: 90px;
-    font-family: 'Meatloaf';
 
     &--item {
         display: flex;
@@ -11,8 +10,9 @@
         text-decoration: none;
         width: calc(100%/3);
         height: 90px;
-        font-size: 30px;
+        font-size: 65px;
         color: $colorWhite;
+        font-family: 'Meatloaf';
 
         &---blue {
             background-color: $colorFinalBlue;
