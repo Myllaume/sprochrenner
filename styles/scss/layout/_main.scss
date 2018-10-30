@@ -5,12 +5,117 @@
     &__summary {
         margin: 30px 50px 30px 50px;
         text-align: justify;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
-    &__summary--title {
-        text-align: center;
-        font-family: 'Meatloaf';
-        font-size: 80px;
-        color: $colorFinalBlue;
+        &--title {
+            text-align: center;
+            font-family: 'Meatloaf';
+            font-size: 80px;
+            color: $colorFinalBlue;
+        }
+
+        &--articles {
+            text-align: center;
+            font-family: 'Meatloaf';
+            font-size: 80px;
+            color: $colorFinalBlue;
+            width: 100%;
+        }
     }
+<<<<<<< HEAD
+=======
+
+    &__bloc {
+        &--icones {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &---picto {
+                @include size(100px);
+            }
+
+            &---between {
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+            }
+
+            &---bulle {
+                // @include size(149px, 190px);
+                @include size(223px, 284px);
+            }
+
+            &---height-bulle {
+                height: 300px;
+            }
+        }
+
+        &--flex {
+            display: flex;
+
+            &---green-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalGreen;
+            }
+
+            &---yellow-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalYellow;
+            }
+
+            &---blue-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalBlue;
+            }
+        }
+
+        &--articles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            max-width: 400px;
+
+            &---picture {
+                @include size(400px, 200px);
+
+            }
+        }
+    }
+}
+
+.icone-calendar {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalGreen;
+}
+
+.icone-panneau {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalYellow;
+}
+
+.icone-chaussure {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalBlue;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+>>>>>>> master
 }

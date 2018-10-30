@@ -27,3 +27,37 @@
     font-size: 20px;
     color: $colorWhite;
 }
+
+// boutons-accueil
+
+.bouton-yellow {
+    @include size(230px, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorFinalYellow;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: $colorWhite;
+}
+
+
+.bouton-pointille-turquoise {
+    @include size(230px, 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed $colorFinalTurquoise;
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: $colorFinalTurquoise;
+    font-size: 30px;
+}
