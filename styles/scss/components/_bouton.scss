@@ -49,6 +49,7 @@
 .bouton-pointille-turquoise {
     @include size(230px, 70px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px dashed $colorFinalTurquoise;
