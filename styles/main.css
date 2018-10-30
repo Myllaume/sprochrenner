@@ -156,6 +156,47 @@ body {
   color: whitesmoke;
 }
 
+.bouton-yellow {
+  width: 230px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffc361;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  color: whitesmoke;
+}
+
+.bouton-pointille-turquoise {
+  width: 230px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed #1ebf83;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+  color: #1ebf83;
+  font-size: 30px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -409,8 +450,95 @@ body {
   color: #28c6d1;
 }
 
-.main__bloc {
-  height: 800px;
+.main__bloc--icones {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__bloc--icones---picto {
+  width: 100px;
+  height: 100px;
+}
+
+.main__bloc--icones---between {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.main__bloc--icones---bulle {
+  width: 223px;
+  height: 284px;
+}
+
+.main__bloc--icones---height-bulle {
+  height: 300px;
+}
+
+.main__bloc--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__bloc--flex---green-bar {
+  width: 333px;
+  height: 15px;
+  background-color: #7ac943;
+}
+
+.main__bloc--flex---yellow-bar {
+  width: 333px;
+  height: 15px;
+  background-color: #ffc361;
+}
+
+.main__bloc--flex---blue-bar {
+  width: 333px;
+  height: 15px;
+  background-color: #28c6d1;
+}
+
+.icone-calendar {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #7ac943;
+}
+
+.icone-panneau {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #ffc361;
+}
+
+.icone-chaussure {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  color: #28c6d1;
 }
 
 .raccourcis {

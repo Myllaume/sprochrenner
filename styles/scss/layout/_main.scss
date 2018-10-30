@@ -14,6 +14,71 @@
     }
 
     &__bloc {
-        height: 800px;
+        &--icones {
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &---picto {
+                @include size(100px);
+            }
+
+            &---between {
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                text-align: center;
+            }
+
+            &---bulle {
+                // @include size(149px, 190px);
+                @include size(223px, 284px);
+            }
+
+            &---height-bulle {
+                height: 300px;
+            }
+        }
+
+        &--flex {
+            display: flex;
+
+            &---green-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalGreen;
+            }
+    
+            &---yellow-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalYellow;
+            }
+    
+            &---blue-bar {
+                @include size(333px, 15px);
+                background-color: $colorFinalBlue;
+            }
+        }
     }
+}
+
+.icone-calendar {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalGreen;
+}
+
+.icone-panneau {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalYellow;
+}
+
+.icone-chaussure {
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: $colorFinalBlue;
 }
