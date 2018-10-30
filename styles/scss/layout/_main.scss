@@ -1,4 +1,5 @@
 .main {
+    padding: 40px 0;
     background-color: $colorWhite;
 
     &__summary {
@@ -11,9 +12,5 @@
         font-family: 'Meatloaf';
         font-size: 80px;
         color: $colorFinalBlue;
-    }
-
-    &__bloc {
-        height: 800px;
     }
 }
