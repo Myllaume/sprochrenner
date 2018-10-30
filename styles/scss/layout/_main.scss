@@ -4,13 +4,25 @@
     &__summary {
         margin: 30px 50px 30px 50px;
         text-align: justify;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
 
-    &__summary--title {
-        text-align: center;
-        font-family: 'Meatloaf';
-        font-size: 80px;
-        color: $colorFinalBlue;
+        &--title {
+            text-align: center;
+            font-family: 'Meatloaf';
+            font-size: 80px;
+            color: $colorFinalBlue;
+        }
+
+        &--articles {
+            text-align: center;
+            font-family: 'Meatloaf';
+            font-size: 80px;
+            color: $colorFinalBlue;
+            width: 100%;
+        }
     }
 
     &__bloc {
@@ -51,15 +63,29 @@
                 @include size(333px, 15px);
                 background-color: $colorFinalGreen;
             }
-    
+
             &---yellow-bar {
                 @include size(333px, 15px);
                 background-color: $colorFinalYellow;
             }
-    
+
             &---blue-bar {
                 @include size(333px, 15px);
                 background-color: $colorFinalBlue;
+            }
+        }
+
+        &--articles {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            max-width: 400px;
+
+            &---picture {
+                @include size(400px, 200px);
+
             }
         }
     }
@@ -81,4 +107,11 @@
     font-family: 'Bebas Neue';
     font-size: 30px;
     color: $colorFinalBlue;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
