@@ -28,7 +28,7 @@ h2,
 h3,
 p,
 a {
-  font-family: "Bebas Neue";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -474,8 +474,6 @@ body {
   color: #28c6d1;
 }
 
-<<<<<<< HEAD
-=======
 .main__summary--articles {
   text-align: center;
   font-family: 'Meatloaf';
@@ -614,7 +612,6 @@ body {
           align-items: center;
 }
 
->>>>>>> master
 .raccourcis {
   display: -webkit-box;
   display: -ms-flexbox;
