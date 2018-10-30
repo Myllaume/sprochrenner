@@ -86,7 +86,16 @@
 
             &---picture {
                 @include size(400px, 200px);
+            }
+        }
+    }
+}
 
+@media(max-width: 600px) {
+    .main {
+        &__bloc {
+            &--carte {
+                display: none;
             }
         }
     }

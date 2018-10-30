@@ -578,6 +578,12 @@ body {
   height: 200px;
 }
 
+@media (max-width: 600px) {
+  .main__bloc--carte {
+    display: none;
+  }
+}
+
 .icone-calendar {
   font-family: 'Bebas Neue';
   font-size: 30px;
