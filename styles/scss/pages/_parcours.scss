@@ -1,0 +1,65 @@
+.col-texte-parcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        margin: 10px;
+    }
+
+    p {
+        margin: 10px 0 20px 0;
+    }
+}
+
+.carte-box {
+    @include size(100%, 300px);
+    display: flex;
+    justify-content: end;
+    flex: 4;
+    // background-color: orange;
+}
+
+.info-box {
+    @include size(100%, auto);
+    flex: 2;
+    // background-color: orange;
+    border: 2px dashed $colorFinalTurquoise;
+    padding: 10px;
+}
+
+.info-content {
+    @include size(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 83%);
+    padding: 25px 15px;
+
+    h3 {
+        color: $colorFinalTurquoise;
+        font-size: 28px;
+    }
+
+    img {
+        width: 100%;
+        margin: 10px;
+    }
+
+    &--nom-ville {
+        font-family: 'Bebas Neue';
+        font-size: 32px;
+    }
+
+    &--kilometre {
+        font-family: 'Bebas Neue';
+        font-size: 29px;
+        color: $colorFinalTurquoise;
+    }
+
+    &--texte {
+        margin: 20px 0;
+        text-align: center;
+    }
+}

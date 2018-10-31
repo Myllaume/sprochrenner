@@ -1,5 +1,6 @@
 .titre-page {
-    font-size: 36px;
+    font-family: "Meatloaf";
+    font-size: 170px;
     color: $colorWhite;
 }
 
@@ -9,12 +10,15 @@ h3,
 p,
 a {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
-h3 {
+h1, h2, h3 {
     letter-spacing: 0.1em;
+    font-family: 'Bebas Neue';
 }
 
 p {
     letter-spacing: 0.1em;
+    font-size: 18px;
 }

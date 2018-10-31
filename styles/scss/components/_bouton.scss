@@ -31,31 +31,31 @@
 // boutons-accueil
 
 .bouton-yellow {
-    @include size(230px, 70px);
+    @include size(220px, 60px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $colorFinalYellow;
     text-decoration: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     font-family: 'Bebas Neue';
-    font-size: 20px;
+    font-size: 24px;
     color: $colorWhite;
+
+    &:hover {
+        background-color: hsl(37, 100%, 59%);;
+    }
 }
 
 
 .bouton-pointille-turquoise {
-    @include size(230px, 70px);
+    @include size(220px, 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 2px dashed $colorFinalTurquoise;
     text-decoration: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
     border-radius: 10px;
     font-family: 'Bebas Neue';
     font-size: 20px;
