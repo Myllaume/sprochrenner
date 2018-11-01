@@ -93,9 +93,53 @@
 
 @media(max-width: 600px) {
     .main {
+        &__summary {
+            margin: 0;
+            display: block;
+        }
+
         &__bloc {
             &--carte {
                 display: none;
+            }
+
+            &--icones {
+                height: 200px;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+
+
+                &---picto {
+                    @include size(75px);
+                }
+
+                &---bulle {
+                    display: none;
+                }
+
+                &---resp-marges {
+                    margin: 15px;
+                }
+            }
+        }
+    }
+
+    .size-resp {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:700px) {
+    .main {
+        &__bloc {
+            &--icones {
+                height: 200px;
+
+                &---bulle {
+                    display: none;
+                }
             }
         }
     }

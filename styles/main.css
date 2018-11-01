@@ -284,9 +284,28 @@ body {
 .header__navigation--burger--branche {
   width: 45px;
   height: 5px;
-  background-color: #161515;
+  background-color: #1ebf83;
   margin: 5px 0;
   border-radius: 2px;
+}
+
+.header__navigation--deploiement {
+  margin: 0;
+  width: 800px;
+  background-color: #e28140;
+}
+
+.header__navigation--deploiement---menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__enseigne {
@@ -686,7 +705,48 @@ body {
 }
 
 @media (max-width: 600px) {
+  .main__summary {
+    margin: 0;
+    display: block;
+  }
   .main__bloc--carte {
+    display: none;
+  }
+  .main__bloc--icones {
+    height: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__bloc--icones---picto {
+    width: 75px;
+    height: 75px;
+  }
+  .main__bloc--icones---bulle {
+    display: none;
+  }
+  .main__bloc--icones---resp-marges {
+    margin: 15px;
+  }
+  .size-resp {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main__bloc--icones {
+    height: 200px;
+  }
+  .main__bloc--icones---bulle {
     display: none;
   }
 }
@@ -761,6 +821,24 @@ body {
 
 .raccourcis--item---yellow {
   background-color: #ffc361;
+}
+
+@media (max-width: 700px) {
+  .raccourcis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: 210px;
+  }
+  .raccourcis--item {
+    width: 100%;
+  }
 }
 
 .coordonnes-content {
