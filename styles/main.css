@@ -647,7 +647,6 @@ body {
 }
 
 .main {
-  padding: 40px 0;
   background-color: whitesmoke;
 }
 
@@ -802,6 +801,9 @@ body {
     margin: 0;
     display: block;
   }
+  .main__summary > p {
+    padding: 15px 55px 0 10px;
+  }
   .main__bloc--carte {
     display: none;
   }
@@ -829,6 +831,26 @@ body {
   }
   .main__bloc--icones---resp-marges {
     margin: 15px;
+  }
+  .main__bloc--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__bloc--flex---green-bar {
+    width: 125px;
+    height: 15px;
+    background-color: #7ac943;
+  }
+  .main__bloc--flex---yellow-bar {
+    width: 125px;
+    height: 15px;
+    background-color: #ffc361;
+  }
+  .main__bloc--flex---blue-bar {
+    width: 125px;
+    height: 15px;
+    background-color: #28c6d1;
   }
   .size-resp {
     font-size: 15px;
@@ -1688,5 +1710,218 @@ body {
 .display-none {
   display: none;
 >>>>>>> brioup
+}
+
+.content-inscription {
+  margin: 0 60px;
+}
+
+.text-content-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inscription-box {
+  width: 95%;
+  height: auto;
+  background-color: #7ac943;
+}
+
+.inscription-box--traille {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: #7ac943;
+  border-radius: 5px;
+}
+
+.inscription-box--traille p {
+  margin: 5px 15px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.inscription-box--traille h3 {
+  margin: 5px 15px;
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.inscription-box--form {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 26px;
+  color: whitesmoke;
+  background-color: #e6e6e6;
+}
+
+.inscription-box--form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.inscription-box--form--ligne {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px 0;
+}
+
+.inscription-box--form--ligne input,
+.inscription-box--form--ligne label,
+.inscription-box--form--ligne textarea {
+  width: 50%;
+  border: 0;
+  background-color: transparent;
+  font-family: "Bebas Neue";
+}
+
+.inscription-box--form--ligne input,
+.inscription-box--form--ligne textarea {
+  width: 300px;
+  position: relative;
+  top: -5px;
+  padding: 5px;
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  font-family: "Meatloaf";
+}
+
+.inscription-box--form--ligne textarea {
+  height: 200px;
+  background-color: #b2b2b2;
+  border-radius: 5px;
+}
+
+.inscription-box--form--ligne input {
+  border-bottom: 1px #b2b2b2 solid;
+}
+
+.inscription-box--form--ligne label {
+  width: 160px;
+  color: #7ac943;
+}
+
+.inscription-box--form--ligne--select option {
+  width: 500px;
+  height: auto;
+}
+
+.inscription-box--form input[type="submit"] {
+  display: inline-block;
+  background-color: #7ac943;
+  border: 0;
+  padding: 5px 30px;
+  font-size: 19px;
+  color: whitesmoke;
+  border-radius: 5px;
+  margin: 10px 0;
+  letter-spacing: 0.2em;
+  font-family: "Bebas Neue";
+}
+
+.zone-commentaire__box {
+  position: relative;
+  width: 700px;
+  height: 250px;
+  background-color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone-commentaire__box--triangle {
+  position: absolute;
+  bottom: -30px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 0 50px;
+  border-color: transparent transparent transparent #e6e6e6;
+  -webkit-transform: rotate(115deg);
+          transform: rotate(115deg);
+}
+
+.zone-commentaire__box--user > h1 {
+  font-size: 25px;
+}
+
+.zone-commentaire__box--texte > p {
+  text-align: center;
+}
+
+.zone-commentaire__box--date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */
