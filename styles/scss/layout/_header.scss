@@ -108,7 +108,7 @@
         align-items: center;
 
         &--logo-site {
-            position: relative;
+            // position: relative;
             left: -50px;
             width: 200px;
         }
@@ -204,11 +204,46 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .header {
+        &__navigation {
+            &--deploiement {
+                width: 100vw;
+                height: 0;
+                overflow: hidden;
+                background-color: hsl(0, 0%, 30%);
+                transition: all 0.7s;
+            
+            &--ouverture {
+                height: 390px;
+            }
+
+                &---menu {
+                    height: 390px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1000px) {
 
     .header {
         height: 550px;
         background-position: center;
+
+        &__navigation {
+
+            &--burger,
+            &--branche {
+                display: none;
+            }
+        }
 
         &__enseigne {
 
