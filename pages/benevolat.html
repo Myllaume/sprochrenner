@@ -33,17 +33,87 @@
         </header>
 
         <nav class="raccourcis">
-            <a href="#" class="raccourcis--item nav-link raccourcis--item---green">Bénévolat</a>
-            <a href="#" class="raccourcis--item nav-link raccourcis--item---yellow">Événements</a>
+            <a href="benevolat.html" class="raccourcis--item nav-link raccourcis--item---green">Bénévolat</a>
+            <a href="construction.html" class="raccourcis--item nav-link raccourcis--item---yellow">Événements</a>
             <a href="contact.html" class="raccourcis--item nav-link raccourcis--item---blue">Contact</a>
         </nav>
 
         <main class="main">
 
             <section class="main__bloc content-benevolat row">
-                <article class="article-box article-benevolat col1">
-                    <div class="article-main--image-conteneur">
-                        <img src="../src/images/banniere.jpg" alt="" class="article-box--image">
+                <article class="main__bloc--article col1">
+                    <img src="../src/images/volunteer.jpg" alt="Personnes qui courent" class="main__bloc--article---image">
+                    <h1 class="main__bloc--article---titre">Nous sommes à la recherche de bénévoles</h1>
+                    <div class="text-content-article">
+                        <p class="main__bloc--article---texte">
+                            Le projet « Sprochrenner » est une course de relais ouverte à tous, qui s’inscrit dans une
+                            perspective durable, symbolisant la transmission intergénérationnelle du patrimoine
+                            immatériel et linguistique de l’Alsace dans l’espace économique et culturel du Rhin
+                            Supérieur.
+                        </p>
+                        <p class="main__bloc--article---texte">
+                            La « Sprochrenner » a pour but de favoriser auprès du plus grand nombre un élan festif et
+                            fédérateur d’appartenance à l’espace culturel, économique et européen du Rhin Supérieur.
+                        </p>
+                        <p class="main__bloc--article---texte">
+                            Pour mener à bien ce projet, nous recherchons des bénévoles motivés pour nous aider dans
+                            l'organisation de la course.
+                        </p>
+                        <ul>
+                            <li>Vous aimez l'Alsace et souhaitez vous investir ?</li>
+                            <li>Vous être membre d'une association culturelle (musique, folklore, théatre) ?</li>
+                            <li>Vous voulez participer à la fête quand la course passera par votre village ?</li>
+                        </ul>
+                        <p class="main__bloc--article---texte-lien">
+                            Pour vous inscrire cliquez sur le lien ci-dessous :
+                        </p>
+                        <div class="main__bloc--article---bouton">
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fgoo.gl%2Fforms%2FKrypIekuJ8i8Q7pB3%3Ffbclid%3DIwAR1xnxO7vm7aatT-p1o8hGSsTKPzxGE7x5ZNwVtgsxC0hyt9jlx6z_A1xus&h=AT0YVRB8gj1pZThd4Ld0BqBK63sT_fgNeUL30RW9gf-Rtgw3xcfsWnS0lSoRzaIZClyP0xbv5oQTfz7M20jYR7Z9JNB1Y7S_7hqSw27WoAV4vLMu_GHAeTLf8paXwB-NlCYuXB4CfrL-jcdkCHkv5X4aH8LNEyt7kz3U2N9NpnLYxoFe1IZ3xGYEhx3fN1Wa7Zio_qeHBiw5o2f9nO7krttkHTp9QuiA1ZUWz2ekSqx2mSuPj0Y4RDW2nRe8OYZzIph8OAevfpCMScizXAW8-Nnb2YCZOLam5gLUUTnKRCSEszXFBjTmkLI2X-fLNTDeCOYqQAr2wCbGtY2WFqjHHynIN4W0ZP3QRRGSXGUUAzfjbg6JCD5WsPNf267gMEzLwwr3af3BANt0YUZThqCsTYWce74xgjklRRee19e2PSdzxNF5ptmGSQ"
+                                class="bouton-pointille-turquoise">Devenir Bénévole</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="main__bloc form-content col1">
+                <article class="commentaire-box">
+                    <div class="commentaire-content">
+                        <div class="commentaire-box--traille">
+                            <p>Un commentaire ?</p>
+                        </div>
+                        <div class="commentaire-box--form">
+                            <form>
+                                <div class="commentaire-box--form--ligne">
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" name="nom" id="nom">
+                                </div>
+                                <div class="commentaire-box--form--ligne">
+                                    <label for="sujet">Titre :</label>
+                                    <input type="text" name="sujet" id="sujet">
+                                </div>
+                                <div class="commentaire-box--form--ligne">
+                                    <label for="message">Message :</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                                <input type="submit" value="Envoyer">
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                <article class="zone-commentaire">
+                    <div class="zone-commentaire__box">
+                        <div class="zone-commentaire__box--triangle"></div>
+                        <div class="zone-commentaire__box--user">
+                            <h1>Jean-Kévin</h1>
+                        </div>
+                        <div class="zone-commentaire__box--texte">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laboriosam asperiores minus
+                                dolorem veritatis, minima doloremque commodi tempora vel possimus fugiat, excepturi
+                                quisquam consequuntur eaque cupiditate rem deleniti dolores similique.</p>
+                        </div>
+                        <div class="zone-commentaire__box--date">
+                            <p>02/11/2018</p>
+                        </div>
                     </div>
                 </article>
             </section>

@@ -14,7 +14,8 @@ h1,
 h2,
 h3,
 p,
-a {
+a,
+li {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -27,4 +28,9 @@ h1, h2, h3 {
 p {
     letter-spacing: 0.1em;
     font-size: 18px;
+}
+
+li {
+    font-weight: bold;
+    margin: 10px 0;
 }
