@@ -66,13 +66,61 @@
 
             <section class="row">
                 <article class="carte-box col2">
-
+                    <div class="carte-box__fil">
+                        <div class="carte-box--repere" id="rep-depart">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">Départ</p>
+                                <p class="carte-box--ville-etape">Bâle</p>
+                            </div>
+                        </div>
+                        <div class="carte-box--repere" id="rep-etape-1">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">10km</p>
+                                <p class="carte-box--ville-etape">Aoknheim</p>
+                            </div>
+                            <div class="carte-box--repere--pointe"></div>
+                        </div>
+                        <div class="carte-box--repere" id="rep-etape-2">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">20km</p>
+                                <p class="carte-box--ville-etape">Aornheim</p>
+                            </div>
+                            <div class="carte-box--repere--pointe"></div>
+                        </div>
+                        <div class="carte-box--repere" id="rep-etape-3">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">30km</p>
+                                <p class="carte-box--ville-etape">Aokim</p>
+                            </div>
+                            <div class="carte-box--repere--pointe"></div>
+                        </div>
+                        <div class="carte-box--repere" id="rep-etape-4">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">40km</p>
+                                <p class="carte-box--ville-etape">Afheuhheim</p>
+                            </div>
+                            <div class="carte-box--repere--pointe"></div>
+                        </div>
+                        <div class="carte-box--repere" id="rep-arrive">
+                            <div class="carte-box__texte-content">
+                                <p class="carte-box--nom-etape">Arrivée</p>
+                                <p class="carte-box--ville-etape">Wissembourg</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
 
-                <article class="info-box col2">
+                <article class="info-box col2" id="aff-aide"">
+                    <div class="info-content">
+                        <p class="info-box--aide">Survolez une étape pour voir les animations sur place ou bien acheter
+                            des kilomètres alentours.</p>
+                    </div>
+                </article>
+
+                <article class="info-box display-none col2" id="aff-depart">
                     <div class="info-content">
                         <h3>Destination</h3>
-                        <img src="../src/images/strasbourg.jpg" alt="">
+                        <img src="../src/images/bale.jpg" alt="">
                         <p class="info-content--nom-ville">Wissembourg</p>
                         <p class="info-content--kilometre">22 km</p>
                         <p class="info-content--texte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
@@ -82,6 +130,19 @@
                             repellendus nisi
                             necessitatibus temporibus accusamus aliquam cum quae esse praesentium atque qui similique
                             culpa dolorem, voluptates nemo nesciunt minus</p>
+                        <a href="#" class="bouton-yellow">Activités sur place</a>
+                    </div>
+                </article>
+
+                <article class="info-box display-none col2" id="aff-arrive">
+                    <div class="info-content">
+                        <h3>Destination</h3>
+                        <img src="../src/images/wissembourg.jpg" alt="">
+                        <p class="info-content--nom-ville">Wissembourg</p>
+                        <p class="info-content--kilometre">22 km</p>
+                        <p class="info-content--texte">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+                            nemo at excepturi magnam iusto praesentium quis in rem quas delectus!</p>
+                        <a href="#" class="bouton-pointille-turquoise">Acheter</a>
                         <p class="info-content--texte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                             repellendus nisi
                             necessitatibus temporibus accusamus aliquam cum quae esse praesentium atque qui similique
@@ -130,5 +191,7 @@
     </div>
 
 </body>
+
+<script src="../js/parcours.js"></script>
 
 </html>

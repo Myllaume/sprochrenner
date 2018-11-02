@@ -1,3 +1,8 @@
+.bouton-green, .bouton-turquoise, .bouton-yellow, .bouton-pointille-turquoise {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -152,6 +157,10 @@ body {
   color: whitesmoke;
 }
 
+.bouton-green:hover {
+  background-color: #58962c;
+}
+
 .bouton-turquoise {
   width: 230px;
   height: 70px;
@@ -170,6 +179,10 @@ body {
   font-family: 'Bebas Neue';
   font-size: 20px;
   color: whitesmoke;
+}
+
+.bouton-turquoise:hover {
+  background-color: #179265;
 }
 
 .bouton-yellow {
@@ -219,6 +232,12 @@ body {
   font-size: 20px;
   color: #1ebf83;
   font-size: 30px;
+}
+
+.bouton-pointille-turquoise:hover {
+  background-color: #1ebf83;
+  color: whitesmoke;
+  border: 0;
 }
 
 .header {
@@ -1244,26 +1263,114 @@ body {
 
 .carte-box {
   width: 100%;
-  height: 300px;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
+  padding: 40px 0;
+}
+
+.carte-box__fil {
+  width: 5px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #161515;
+}
+
+.carte-box--repere {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.carte-box--repere--pointe {
+  position: relative;
+  top: 32px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 24px 0 24px;
+  border-color: orange transparent transparent transparent;
+}
+
+.carte-box--repere:first-child {
+  position: relative;
+  top: -2px;
+  background-color: #7ac943;
+}
+
+.carte-box--repere:last-child {
+  position: relative;
+  bottom: -2px;
+  background-color: #7ac943;
+}
+
+.carte-box__texte-content {
+  width: 220px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  right: -250px;
+}
+
+.carte-box--nom-etape {
+  font-family: 'Bebas Neue';
+  font-size: 20px;
+}
+
+.carte-box--ville-etape {
+  font-family: 'Bebas Neue';
+  font-size: 40px;
 }
 
 .info-box {
   width: 100%;
-  height: auto;
+  height: 890px;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
   border: 2px dashed #1ebf83;
   padding: 10px;
+}
+
+.info-box--aide {
+  text-align: center;
+  font-size: 22px;
 }
 
 .info-content {
@@ -1307,5 +1414,9 @@ body {
 .info-content--texte {
   margin: 20px 0;
   text-align: center;
+}
+
+.display-none {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
