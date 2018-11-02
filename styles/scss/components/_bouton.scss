@@ -1,5 +1,6 @@
 .bouton-green {
     @include size(230px, 70px);
+    @extend %transition;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,10 +12,15 @@
     font-family: 'Bebas Neue';
     font-size: 20px;
     color: $colorWhite;
+
+    &:hover {
+        background-color: hsl(95, 55%, 38%);;
+    }
 }
 
 .bouton-turquoise {
     @include size(230px, 70px);
+    @extend %transition;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,12 +32,17 @@
     font-family: 'Bebas Neue';
     font-size: 20px;
     color: $colorWhite;
+
+    &:hover {
+        background-color: hsl(158, 73%, 33%);
+    }
 }
 
 // boutons-accueil
 
 .bouton-yellow {
     @include size(220px, 60px);
+    @extend %transition;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +61,7 @@
 
 .bouton-pointille-turquoise {
     @include size(220px, 60px);
+    @extend %transition;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,4 +73,10 @@
     font-size: 20px;
     color: $colorFinalTurquoise;
     font-size: 30px;
+
+    &:hover {
+        background-color: $colorFinalTurquoise;
+        color: $colorWhite;
+        border: 0;
+    }
 }

@@ -14,19 +14,83 @@
 }
 
 .carte-box {
-    @include size(100%, 300px);
+    @include size(100%, 800px);
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex: 4;
+    padding: 40px 0;
     // background-color: orange;
+
+    &__fil {
+        @include size(5px, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $colorBlack;
+    }
+
+    &--repere {
+        @include size(50px);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: orange;
+        border-radius: 50%;
+
+        &--pointe {
+            position: relative;
+            top: 32px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 60px 24px 0 24px;
+            border-color: orange transparent transparent transparent;
+        }
+
+        &:first-child {
+            position: relative;
+            top: -2px;
+            background-color: $colorFinalGreen;
+        }
+
+        &:last-child {
+            position: relative;
+            bottom: -2px;
+            background-color: $colorFinalGreen;
+        }
+    }
+
+    &__texte-content {
+        @include size(220px, auto);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        right: -250px;
+    }
+
+    &--nom-etape {
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+    }
+
+    &--ville-etape {
+        font-family: 'Bebas Neue';
+        font-size: 40px;
+    }
 }
 
 .info-box {
-    @include size(100%, auto);
+    @include size(100%, 890px);
     flex: 2;
-    // background-color: orange;
     border: 2px dashed $colorFinalTurquoise;
     padding: 10px;
+
+    &--aide {
+        text-align: center;
+        font-size: 22px;
+    }
 }
 
 .info-content {
@@ -62,4 +126,8 @@
         margin: 20px 0;
         text-align: center;
     }
+}
+
+.display-none {
+    display: none;
 }
