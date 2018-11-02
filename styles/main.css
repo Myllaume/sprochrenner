@@ -1422,7 +1422,10 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
+.display-none {
+  display: none;
+}
+
 .content-benevolat {
   margin: 0 60px;
 }
@@ -1684,9 +1687,5 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-=======
-.display-none {
-  display: none;
->>>>>>> brioup
 }
 /*# sourceMappingURL=main.css.map */
