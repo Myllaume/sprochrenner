@@ -1,0 +1,161 @@
+.content-inscription {
+    margin: 0 60px;
+}
+
+.text-content-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// -- éléments page
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inscription-box {
+    @include size(95%, auto);
+    background-color: $colorFinalGreen;
+
+    &--traille {
+        @include size(100%, auto);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: $colorFinalGreen;
+        border-radius: 5px;
+
+        p {
+            margin: 5px 15px;
+            font-size: 18px;
+            color: $colorWhite;
+        }
+
+        h3 {
+            margin: 5px 15px;
+            font-size: 24px;
+            color: $colorWhite;
+        }
+    }
+
+    &--form {
+        @include size(100%, auto);
+        display: flex;
+        justify-content: center;
+        font-size: 26px;
+        color: $colorWhite;
+        background-color: hsl(0, 0%, 90%);
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        &--ligne {
+            @include size(100%, auto);
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0;
+
+            input,
+            label,
+            textarea {
+                width: 50%;
+                border: 0;
+                background-color: transparent;
+                font-family: "Bebas Neue";
+            }
+
+            input,
+            textarea {
+                width: 300px;
+                position: relative;
+                top: -5px;
+                padding: 5px;
+                font-size: 32px;
+                letter-spacing: 0.15em;
+                font-family: "Meatloaf";
+            }
+
+            textarea {
+                height: 200px;
+                background-color: #b2b2b2;
+                border-radius: 5px;
+            }
+
+            input {
+                border-bottom: 1px #b2b2b2 solid;
+            }
+
+            label {
+                width: 160px;
+                color: $colorFinalGreen;
+            }
+
+            &--select {
+                option {
+                    @include size(500px, auto);
+                }
+            }
+        }
+
+        input[type="submit"] {
+            display: inline-block;
+            background-color: $colorFinalGreen;
+            border: 0;
+            padding: 5px 30px;
+            font-size: 19px;
+            color: $colorWhite;
+            border-radius: 5px;
+            margin: 10px 0;
+            letter-spacing: 0.2em;
+            font-family: "Bebas Neue";
+        }
+    }
+}
+
+.zone-commentaire {
+    &__box {
+        position: relative;
+        @include size(700px, 250px);
+        background-color: hsl(0, 0%, 90%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 45px;
+        align-items: center;
+
+        &--triangle {
+            position: absolute;
+            bottom: -30px;
+            left: -10px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 50px 0 0 50px;
+            border-color: transparent transparent transparent hsl(0, 0%, 90%);
+            transform: rotate(115deg);
+        }
+
+        &--user>h1 {
+            font-size: 25px;
+        }
+
+        &--texte>p {
+            text-align: center;
+        }
+
+        &--date {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

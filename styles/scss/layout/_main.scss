@@ -1,5 +1,4 @@
 .main {
-    padding: 40px 0;
     background-color: $colorWhite;
 
     &__summary {
@@ -106,6 +105,10 @@
             display: block;
         }
 
+        &__summary>p {
+            padding: 15px 55px 0 10px;
+        }
+
         &__bloc {
             &--carte {
                 display: none;
@@ -129,6 +132,25 @@
 
                 &---resp-marges {
                     margin: 15px;
+                }
+            }
+
+            &--flex {
+                display: flex;
+    
+                &---green-bar {
+                    @include size(125px, 15px);
+                    background-color: $colorFinalGreen;
+                }
+    
+                &---yellow-bar {
+                    @include size(125px, 15px);
+                    background-color: $colorFinalYellow;
+                }
+    
+                &---blue-bar {
+                    @include size(125px, 15px);
+                    background-color: $colorFinalBlue;
                 }
             }
         }
