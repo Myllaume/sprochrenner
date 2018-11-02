@@ -5,20 +5,18 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     width: 100%;
     height: 390px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.3), 
-        rgba(0, 0, 0, 0.3)
-        ), url(/src/images/fond-header.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)), url(/src/images/fond-header.png);
     background-position: right top;
     background-size: cover;
 
     &__navigation {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 0px;
+        right: 0px;
 
         &--burger {
             position: absolute;
@@ -53,15 +51,47 @@
         }
 
         &--deploiement {
-            margin: 0;
-            width: 800px;
-            background-color: $colorTest;
+            width: 1000px;
+            background-color: rgba(0, 0, 0, 0.5);
+            right: 90px;
 
-           &---menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-           }
+            &---menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 910px;
+                height: 90px;
+                font-family: 'Bebas Neue';
+                color: $colorWhite;
+                font-size: 20px;
+
+                &----links {
+                    font-family: 'Bebas Neue';
+                    color: $colorWhite;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+                &----links::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: $colorFinalTurquoise;
+                    transition: width 0.5s;
+                }
+
+                &----links:hover::after {
+                    width: 100%;
+                }
+
+                &----links:hover {
+                    color: $colorFinalTurquoise;
+                }
+            }
         }
     }
 
@@ -126,6 +156,26 @@
         }
     }
 }
+
+// @media (max-width: 700px) {
+//     .header {
+//         &__navigation {
+//             &--deploiement {
+//                 background-color: hsl(0, 0%, 30%);
+//                 display: flex;
+//                 height: 390px;
+
+//                 &---menu {
+//                     height: 390px;
+//                     width: 50%;
+//                     display: flex;
+//                     flex-direction: column;
+//                     align-items: center;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 450px) {
     .header__enseigne--logo-site {
@@ -193,7 +243,7 @@
 
 }
 
-// Couleurs compteur (je sais pas où le placer mdrrr)
+// Couleurs compteur
 
 .days {
     background-color: $colorFinalGreen;

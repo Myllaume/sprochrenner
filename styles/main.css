@@ -230,7 +230,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   width: 100%;
   height: 390px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/src/images/fond-header.png);
@@ -241,8 +241,8 @@ body {
 
 .header__navigation {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
 }
 
 .header__navigation--burger {
@@ -290,9 +290,9 @@ body {
 }
 
 .header__navigation--deploiement {
-  margin: 0;
-  width: 800px;
-  background-color: #e28140;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 90px;
 }
 
 .header__navigation--deploiement---menu {
@@ -303,9 +303,43 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 910px;
+  height: 90px;
+  font-family: 'Bebas Neue';
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.header__navigation--deploiement---menu----links {
+  font-family: 'Bebas Neue';
+  color: whitesmoke;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__navigation--deploiement---menu----links::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1ebf83;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header__navigation--deploiement---menu----links:hover::after {
+  width: 100%;
+}
+
+.header__navigation--deploiement---menu----links:hover {
+  color: #1ebf83;
 }
 
 .header__enseigne {

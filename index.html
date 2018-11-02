@@ -14,6 +14,8 @@
 
     <div class="wrapper">
 
+        <!-- NAVIGATION PRINCIPALE -->
+
         <header class="header">
             <nav class="header__navigation">
                 <div class="header__navigation--burger">
@@ -25,17 +27,20 @@
 
                 <div class="header__navigation--deploiement">
                     <div class="header__navigation--deploiement---menu">
-                        <div>Accueil</div>
-                        <div>Informations</div>
-                        <div>Participer</div>
-                        <div>Actualités</div>
-                        <div>Projets</div>
-                    </div>
-                    <div class="header__navigation--deploiement---sous-menu">
-                        
+                        <div><a href="index.html" class="header__navigation--deploiement---menu----links">Accueil</a></div>
+                        <div id="informations">Informations
+                            <div class="header__navigation--deploiement---menu----informations"></div>
+                        </div>
+                        <div id="participer">Participer
+                            <div class="header__navigation--deploiement---menu----participer"></div>
+                        </div>
+                        <div><a href="pages\actualites.html" class="header__navigation--deploiement---menu----links">Actualités</a></div>
+                        <div><a href="" class="header__navigation--deploiement---menu----links">Projets</a></div>
                     </div>
                 </div>
             </nav>
+
+            <!-- FIN NAVIGATION PRINCIPALE -->
 
             <section class="header__enseigne">
                 <img src="./src/images/logo-site.png" alt="" class="header__enseigne--logo-site">
@@ -58,17 +63,22 @@
             </section>
 
             <section class="header__boutons-content row">
-                <a href="pages/parcours.html" class="header__boutons-content--bouton bouton-green head-col3">Découvrir le parcours</a>
+                <a href="pages/parcours.html" class="header__boutons-content--bouton bouton-green head-col3">Découvrir
+                    le parcours</a>
                 <p class="header__boutons-content--ou head-col3">ou</p>
                 <a href="#" class="header__boutons-content--bouton bouton-turquoise head-col3">Nous rejoindre !</a>
             </section>
         </header>
+
+        <!-- NAVIGATION "RACCOURCIS" -->
 
         <nav class="raccourcis">
             <a href="#" class="raccourcis--item nav-link raccourcis--item---green">Bénévolat</a>
             <a href="#" class="raccourcis--item nav-link raccourcis--item---yellow">Événements</a>
             <a href="pages\contact.html" class="raccourcis--item nav-link raccourcis--item---blue">Contact</a>
         </nav>
+
+        <!-- DÉBUT CONTENU PRINCIPAL -->
 
         <main class="main row">
 
@@ -83,15 +93,18 @@
 
             <section class="main__bloc col3">
                 <div class="main__bloc--icones">
-                    <div class="main__bloc--icones---resp-marges"><img src="src\images\calendar.png" alt="pictogramme calendrier" class="main__bloc--icones---picto">
+                    <div class="main__bloc--icones---resp-marges"><img src="src\images\calendar.png" alt="pictogramme calendrier"
+                            class="main__bloc--icones---picto">
                         <p class="icone-calendar size-resp">5 Jours</p>
                     </div>
 
-                    <div class="main__bloc--icones---resp-marges"><img src="src\images\panneau.png" alt="pictogramme calendrier" class="main__bloc--icones---picto">
+                    <div class="main__bloc--icones---resp-marges"><img src="src\images\panneau.png" alt="pictogramme calendrier"
+                            class="main__bloc--icones---picto">
                         <p class="icone-panneau size-resp">340 KM</p>
                     </div>
 
-                    <div class="main__bloc--icones---resp-marges"><img src="src\images\chaussure.png" alt="pictogramme calendrier" class="main__bloc--icones---picto">
+                    <div class="main__bloc--icones---resp-marges"><img src="src\images\chaussure.png" alt="pictogramme calendrier"
+                            class="main__bloc--icones---picto">
                         <p class="icone-chaussure size-resp">XX Coureurs</p>
                     </div>
                 </div>
@@ -153,11 +166,15 @@
             </section>
 
             <section class="main__bloc flex col1">
-                    <div class="main__bloc--articles">
-                        <a href="pages/actualites.html" class="bouton-pointille-turquoise">Plus d'articles</a>
-                    </div>
+                <div class="main__bloc--articles">
+                    <a href="pages/actualites.html" class="bouton-pointille-turquoise">Plus d'articles</a>
+                </div>
             </section>
         </main>
+
+        <!-- FIN CONTENU PRINCIPAL -->
+
+        <!-- DÉBUT CONTENU PIED DE PAGE -->
 
         <footer class="footer row">
 
@@ -193,8 +210,9 @@
 
         </footer>
 
+        <!-- FIN CONTENU PIED DE PAGE -->
     </div>
-
+<script src="js\menu.js"></script>
 </body>
 
 </html>
