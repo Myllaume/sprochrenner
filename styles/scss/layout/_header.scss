@@ -13,6 +13,13 @@
     background-position: right top;
     background-size: cover;
 
+    &__flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__navigation {
         position: absolute;
         top: 0px;
