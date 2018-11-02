@@ -48,18 +48,22 @@
             </section>
 
             <section class="header__compteur row">
-                <div class="header__compteur--content head-col4">
-                    <div class="header__compteur--led days">XX</div>
-                    <div class="header__compteur--led days">XX</div>
+                <div class="header__compteur--content head-col4" id="countdown">
+                    <span class="header__compteur--led days" id="d"></span>
+                    <span class="header__compteur--led days">J</span>
+                    <span class="header__compteur--led months" id="m"></span>
+                    <span class="header__compteur--led months">M</span>
+                    <span class="header__compteur--led hours" id="h"></span>
+                    <span class="header__compteur--led hours">H</span>
+                </div>
+                <!-- <div class="header__compteur--content head-col4">
+                    <span class="header__compteur--led months" id="m"></span>
+                    <span class="header__compteur--led months" id="m"></span>
                 </div>
                 <div class="header__compteur--content head-col4">
-                    <div class="header__compteur--led months">XX</div>
-                    <div class="header__compteur--led months">XX</div>
-                </div>
-                <div class="header__compteur--content head-col4">
-                    <div class="header__compteur--led hours">XX</div>
-                    <div class="header__compteur--led hours">XX</div>
-                </div>
+                    <span class="header__compteur--led hours" id="h"></span>
+                    <span class="header__compteur--led hours" id="h"></span>
+                </div> -->
             </section>
 
             <section class="header__boutons-content row">
@@ -213,6 +217,7 @@
         <!-- FIN CONTENU PIED DE PAGE -->
     </div>
 <script src="js\menu.js"></script>
+<script src="js\compteur.js"></script>
 </body>
 
 </html>
