@@ -1,0 +1,45 @@
+.col-texte-preparation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    &--titre-turquoise {
+        color: $colorFinalTurquoise;
+        border-bottom: $colorFinalTurquoise 3px solid;
+    }
+
+    &--titre-bleu {
+        color: $colorFinalBlue;
+        border-bottom: $colorFinalBlue 3px solid;
+    }
+
+    &--titre-vert {
+        color: $colorFinalGreen;
+        border-bottom: $colorFinalGreen 3px solid;
+    }
+}
+
+.bulle-preparation {
+    @include size(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorBlack;
+    border-radius: 50%;
+    color: $colorWhite;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.illustration-securite {
+    border: 4px $colorFinalTurquoise solid;
+    border-radius: 10px;
+}

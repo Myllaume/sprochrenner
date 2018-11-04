@@ -31,8 +31,12 @@ p {
 }
 
 li {
-    font-weight: bold;
     margin: 10px 0;
+    font-size: 18px;
+}
+
+strong {
+    color: $colorFinalBlue;
 }
 
 @media (max-width: 1000px) {
