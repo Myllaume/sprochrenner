@@ -34,3 +34,17 @@ li {
     font-weight: bold;
     margin: 10px 0;
 }
+
+@media (max-width: 1000px) {
+    .titre-page {
+        font-family: "Meatloaf";
+        font-size: 60px;
+        color: $colorWhite;
+    }
+    
+    .titre-page-construction {
+        font-family: "Meatloaf";
+        font-size: 45px;
+        color: $colorWhite;
+    }
+}

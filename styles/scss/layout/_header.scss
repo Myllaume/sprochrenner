@@ -32,7 +32,7 @@
             align-items: center;
             top: 0px;
             right: 0px;
-            @include size(80px);
+            @include size(60px);
             background-color: $colorWhite;
             border-radius: 50%;
 
@@ -43,13 +43,13 @@
                 width: 0;
                 height: 0;
                 border-style: solid;
-                border-width: 35px 35px 0 0;
+                border-width: 27px 35px 0 0;
                 border-color: $colorWhite transparent transparent transparent;
-                transform: rotate(25deg);
+                transform: rotate(30deg);
             }
 
             &--branche {
-                @include size(45px, 5px);
+                @include size(30px, 5px);
                 background-color: $colorFinalTurquoise;
                 margin: 5px 0;
                 border-radius: 2px;
@@ -72,6 +72,41 @@
                 color: $colorWhite;
                 font-size: 20px;
 
+                &----participer {
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    padding: 10px;
+
+                    &-----participation-ouvert {
+                        display: block;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+
+                &----informations {
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    padding: 10px;
+
+                    &-----info-ouvert {
+                        display: block;
+                        height: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
                 &----links {
                     font-family: 'Bebas Neue';
                     color: $colorWhite;
@@ -79,23 +114,79 @@
                     text-decoration: none;
                     display: inline-block;
                     text-decoration: none;
+
+                    &-----turquoise {
+                        color: $colorFinalTurquoise;
+                    }
                 }
 
-                &----links::after {
+                // &----links::after {
+                //     content: '';
+                //     display: block;
+                //     width: 0;
+                //     height: 2px;
+                //     background: $colorFinalTurquoise;
+                //     transition: width 0.5s;
+                // }
+
+                // &----links:hover::after {
+                //     width: 100%;
+                // }
+
+                &----links:hover {
+                    color: $colorFinalTurquoise;
+                }
+
+                &----linksInfo {
+                    font-family: 'Bebas Neue';
+                    color: $colorWhite;
+                    font-size: 15px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+                &----linksInfo::after {
                     content: '';
                     display: block;
                     width: 0;
                     height: 2px;
-                    background: $colorFinalTurquoise;
+                    background: $colorFinalYellow;
                     transition: width 0.5s;
                 }
 
-                &----links:hover::after {
+                &----linksInfo:hover::after {
                     width: 100%;
                 }
 
-                &----links:hover {
-                    color: $colorFinalTurquoise;
+                &----linksInfo:hover {
+                    color: $colorFinalYellow;
+                }
+
+                &----linksPart {
+                    font-family: 'Bebas Neue';
+                    color: $colorWhite;
+                    font-size: 15px;
+                    text-decoration: none;
+                    display: inline-block;
+                    text-decoration: none;
+                }
+
+                &----linksPart::after {
+                    content: '';
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: $colorFinalGreen;
+                    transition: width 0.5s;
+                }
+
+                &----linksPart:hover::after {
+                    width: 100%;
+                }
+
+                &----linksPart:hover {
+                    color: $colorFinalGreen;
                 }
             }
         }
@@ -213,10 +304,10 @@
                 overflow: hidden;
                 background-color: hsl(0, 0%, 30%);
                 transition: all 0.7s;
-            
-            &--ouverture {
-                height: 390px;
-            }
+
+                &---ouverture {
+                    height: 390px;
+                }
 
                 &---menu {
                     height: 390px;
@@ -225,6 +316,56 @@
                     flex-direction: column;
                     justify-content: space-around;
                     align-items: center;
+
+                    &----informations {
+                        width: 100%;
+                        text-align: center;
+                        display: none;
+                        position: inherit;
+
+                        &-----info-ouvert {
+                            display: block;
+                            height: 100px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    &----participer {
+                        width: 100%;
+                        text-align: center;
+                        display: none;
+                        position: inherit;
+
+                        &-----participation-ouvert {
+                            display: block;
+                            height: 100px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    &----linksInfo {
+                        font-family: 'Bebas Neue';
+                        color: $colorWhite;
+                        font-size: 15px;
+                        text-decoration: none;
+                        display: inline-block;
+                        text-decoration: none;
+                    }
+
+                    &----linksPart {
+                        font-family: 'Bebas Neue';
+                        color: $colorWhite;
+                        font-size: 15px;
+                        text-decoration: none;
+                        display: inline-block;
+                        text-decoration: none;
+                    }
                 }
             }
         }

@@ -98,6 +98,40 @@
     }
 }
 
+@media(max-width: 1000px) {
+    .main {
+        background-color: $colorWhite;
+
+        &__summary {
+            // margin: 30px 50px 30px 50px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &--title {
+                text-align: center;
+                font-family: 'Meatloaf';
+                font-size: 60px;
+                color: $colorFinalBlue;
+            }
+
+            &--articles {
+                text-align: center;
+                font-family: 'Meatloaf';
+                font-size: 60px;
+                color: $colorFinalBlue;
+                width: 100%;
+            }
+        }
+    }
+
+    .padding {
+        padding: 15px;
+    }
+}
+
 @media(max-width: 600px) {
     .main {
         &__summary {
@@ -106,7 +140,7 @@
         }
 
         &__summary>p {
-            padding: 15px 55px 0 10px;
+            padding: 15px 15px 0 10px;
         }
 
         &__bloc {
@@ -137,17 +171,17 @@
 
             &--flex {
                 display: flex;
-    
+
                 &---green-bar {
                     @include size(125px, 15px);
                     background-color: $colorFinalGreen;
                 }
-    
+
                 &---yellow-bar {
                     @include size(125px, 15px);
                     background-color: $colorFinalYellow;
                 }
-    
+
                 &---blue-bar {
                     @include size(125px, 15px);
                     background-color: $colorFinalBlue;

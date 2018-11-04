@@ -60,6 +60,19 @@ li {
   margin: 10px 0;
 }
 
+@media (max-width: 1000px) {
+  .titre-page {
+    font-family: "Meatloaf";
+    font-size: 60px;
+    color: whitesmoke;
+  }
+  .titre-page-construction {
+    font-family: "Meatloaf";
+    font-size: 45px;
+    color: whitesmoke;
+  }
+}
+
 body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, white)), url(/src/images/fond-page.png);
   background-image: linear-gradient(to bottom, transparent, white 90%), url(/src/images/fond-page.png);
@@ -304,8 +317,8 @@ body {
           align-items: center;
   top: 0px;
   right: 0px;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   background-color: whitesmoke;
   border-radius: 50%;
 }
@@ -317,14 +330,14 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 35px 35px 0 0;
+  border-width: 27px 35px 0 0;
   border-color: whitesmoke transparent transparent transparent;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 .header__navigation--burger--branche {
-  width: 45px;
+  width: 30px;
   height: 5px;
   background-color: #1ebf83;
   margin: 5px 0;
@@ -356,6 +369,58 @@ body {
   font-size: 20px;
 }
 
+.header__navigation--deploiement---menu----participer {
+  display: none;
+  position: absolute;
+  top: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.header__navigation--deploiement---menu----participer-----participation-ouvert {
+  display: block;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__navigation--deploiement---menu----informations {
+  display: none;
+  position: absolute;
+  top: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.header__navigation--deploiement---menu----informations-----info-ouvert {
+  display: block;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__navigation--deploiement---menu----links {
   font-family: 'Bebas Neue';
   color: whitesmoke;
@@ -365,22 +430,66 @@ body {
   text-decoration: none;
 }
 
-.header__navigation--deploiement---menu----links::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #1ebf83;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-}
-
-.header__navigation--deploiement---menu----links:hover::after {
-  width: 100%;
+.header__navigation--deploiement---menu----links-----turquoise {
+  color: #1ebf83;
 }
 
 .header__navigation--deploiement---menu----links:hover {
   color: #1ebf83;
+}
+
+.header__navigation--deploiement---menu----linksInfo {
+  font-family: 'Bebas Neue';
+  color: whitesmoke;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__navigation--deploiement---menu----linksInfo::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffc361;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header__navigation--deploiement---menu----linksInfo:hover::after {
+  width: 100%;
+}
+
+.header__navigation--deploiement---menu----linksInfo:hover {
+  color: #ffc361;
+}
+
+.header__navigation--deploiement---menu----linksPart {
+  font-family: 'Bebas Neue';
+  color: whitesmoke;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header__navigation--deploiement---menu----linksPart::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #7ac943;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.header__navigation--deploiement---menu----linksPart:hover::after {
+  width: 100%;
+}
+
+.header__navigation--deploiement---menu----linksPart:hover {
+  color: #7ac943;
 }
 
 .header__enseigne {
@@ -495,7 +604,7 @@ body {
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
-  .header__navigation--deploiement--ouverture {
+  .header__navigation--deploiement---ouverture {
     height: 390px;
   }
   .header__navigation--deploiement---menu {
@@ -513,6 +622,68 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .header__navigation--deploiement---menu----informations {
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: inherit;
+  }
+  .header__navigation--deploiement---menu----informations-----info-ouvert {
+    display: block;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__navigation--deploiement---menu----participer {
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: inherit;
+  }
+  .header__navigation--deploiement---menu----participer-----participation-ouvert {
+    display: block;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__navigation--deploiement---menu----linksInfo {
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .header__navigation--deploiement---menu----linksPart {
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
   }
 }
 
@@ -827,13 +998,51 @@ body {
   height: 200px;
 }
 
+@media (max-width: 1000px) {
+  .main {
+    background-color: whitesmoke;
+  }
+  .main__summary {
+    text-align: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__summary--title {
+    text-align: center;
+    font-family: 'Meatloaf';
+    font-size: 60px;
+    color: #28c6d1;
+  }
+  .main__summary--articles {
+    text-align: center;
+    font-family: 'Meatloaf';
+    font-size: 60px;
+    color: #28c6d1;
+    width: 100%;
+  }
+  .padding {
+    padding: 15px;
+  }
+}
+
 @media (max-width: 600px) {
   .main__summary {
     margin: 0;
     display: block;
   }
   .main__summary > p {
-    padding: 15px 55px 0 10px;
+    padding: 15px 15px 0 10px;
   }
   .main__bloc--carte {
     display: none;
