@@ -22,7 +22,7 @@
 // -- éléments page
 
 .coordonnes-box {
-    @include size(280px, 300px);
+    @include size(310px, 300px);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,12 +33,13 @@
         margin-left: 15px;
 
         p {
-            font-size: 26px;
+            font-size: 24px;
         }
     }
 
     &--titre {
         color: rgb(24, 121, 128);
+        font-family: 'Bebas Neue';
     }
 
     &--texte {
@@ -107,15 +108,16 @@
                 position: relative;
                 top: -5px;
                 padding: 5px;
-                font-size: 32px;
+                font-size: 22px;
                 letter-spacing: 0.15em;
-                font-family: "Meatloaf";
+                font-family: "Arial";
             }
 
             textarea {
                 height: 200px;
                 background-color: #b2b2b2;
                 border-radius: 5px;
+                resize:none;
             }
 
             input {

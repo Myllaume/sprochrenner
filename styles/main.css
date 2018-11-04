@@ -1017,7 +1017,7 @@ body {
 }
 
 .coordonnes-box {
-  width: 280px;
+  width: 310px;
   height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,11 +1039,12 @@ body {
 }
 
 .coordonnes-box--ligne p {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .coordonnes-box--titre {
   color: #187980;
+  font-family: 'Bebas Neue';
 }
 
 .coordonnes-box--texte {
@@ -1142,15 +1143,16 @@ body {
   position: relative;
   top: -5px;
   padding: 5px;
-  font-size: 32px;
+  font-size: 22px;
   letter-spacing: 0.15em;
-  font-family: "Meatloaf";
+  font-family: "Arial";
 }
 
 .formulaire-box--form--ligne textarea {
   height: 200px;
   background-color: #b2b2b2;
   border-radius: 5px;
+  resize: none;
 }
 
 .formulaire-box--form--ligne input {
@@ -1309,6 +1311,10 @@ body {
   margin: 35px 0;
   text-align: center;
   width: 80%;
+}
+
+.texte-content-parcours {
+  margin: 0 0 60px 0;
 }
 
 .col-texte-parcours {
