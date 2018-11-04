@@ -1,4 +1,6 @@
 .content-article {
+    display: flex;
+    justify-content: center;
     margin: 0 60px;
 }
 
@@ -33,7 +35,7 @@
 }
 
 .article-second {
-    @include size(100%, 410px);
+    @include size(100%, 430px);
     background-color: $colorFinalBlue;
 
     &:nth-child(even) {
@@ -90,4 +92,10 @@
     &:hover {
         background-color: hsl(0, 0%, 70%);
     }
+}
+
+.actualite-texte-introduction {
+    margin: 35px 0;
+    text-align: center;
+    width: 80%;
 }
