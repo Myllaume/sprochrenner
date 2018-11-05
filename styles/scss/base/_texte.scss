@@ -30,9 +30,15 @@ p {
     font-size: 18px;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 li {
-    margin: 10px 0;
-    font-size: 18px;
+    // list-style-type: none;
+    font-size: 21px;
+    line-height: 1.4em;
 }
 
 strong {
