@@ -82,7 +82,7 @@
 
                     &-----participation-ouvert {
                         display: block;
-                        height: 100px;
+                        height: 130px;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
@@ -111,7 +111,7 @@
                 &----links {
                     font-family: 'Bebas Neue';
                     color: $colorWhite;
-                    font-size: 20px;
+                    font-size: 28px;
                     text-decoration: none;
                     display: inline-block;
                     text-decoration: none;
@@ -141,10 +141,11 @@
                 &----linksInfo {
                     font-family: 'Bebas Neue';
                     color: $colorWhite;
-                    font-size: 15px;
+                    font-size: 20px;
                     text-decoration: none;
                     display: inline-block;
                     text-decoration: none;
+                    margin: 2px 0;
                 }
 
                 &----linksInfo::after {
@@ -167,10 +168,11 @@
                 &----linksPart {
                     font-family: 'Bebas Neue';
                     color: $colorWhite;
-                    font-size: 15px;
+                    font-size: 20px;
                     text-decoration: none;
                     display: inline-block;
                     text-decoration: none;
+                    margin: 2px 0;
                 }
 
                 &----linksPart::after {
@@ -333,11 +335,11 @@
                 transition: all 0.7s;
 
                 &---ouverture {
-                    height: 390px;
+                    height: 450px;
                 }
 
                 &---menu {
-                    height: 390px;
+                    height: 450px;
                     width: 100%;
                     display: flex;
                     flex-direction: column;
@@ -379,7 +381,7 @@
                     &----linksInfo {
                         font-family: 'Bebas Neue';
                         color: $colorWhite;
-                        font-size: 15px;
+                        font-size: 18px;
                         text-decoration: none;
                         display: inline-block;
                         text-decoration: none;
@@ -388,7 +390,7 @@
                     &----linksPart {
                         font-family: 'Bebas Neue';
                         color: $colorWhite;
-                        font-size: 15px;
+                        font-size: 18px;
                         text-decoration: none;
                         display: inline-block;
                         text-decoration: none;
