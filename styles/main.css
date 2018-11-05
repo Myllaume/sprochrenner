@@ -740,6 +740,9 @@ body {
   .header__navigation--burger, .header__navigation--branche {
     display: none;
   }
+  .header__navigation--deploiement---menu----links {
+    font-size: 20px;
+  }
   .header__enseigne--logo-site {
     position: static;
     width: 500px;
